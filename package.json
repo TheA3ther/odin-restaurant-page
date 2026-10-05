@@ -20,6 +20,7 @@
   "homepage": "https://github.com/TheA3ther/odin-restaurant-page#readme",
   "devDependencies": {
     "webpack": "^5.111.1",
-    "webpack-cli": "^7.2.3"
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^6.0.0"
   }
 }
