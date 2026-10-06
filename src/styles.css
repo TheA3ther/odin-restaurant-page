@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: gray;
+}
+
+header {
+    background-color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav > button {
+    width: 15rem;
+    height: 100%;
+    padding: 5px;
+    background-color: inherit;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+nav > button:hover {
+    background-color: darkgray;
+}
