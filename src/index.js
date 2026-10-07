@@ -4,12 +4,31 @@ import createMenu from "./modules/menu.js";
 import createAbout from "./modules/about.js";
 
 const content = document.querySelector("#content");
+const buttonList = document.querySelector("#button-list");
 
-// const home = createHome();
-// content.appendChild(home);
 
-// const menu = createMenu();
-// content.appendChild(menu);
+function onButtonListClick(e){
+    const button = e.target.closest("button");
+    if (button === null) return;
 
-const about = createAbout();
-content.appendChild(about);
+    let contentChild;
+
+    switch (button.id){
+        case "button-home":
+            contentChild = createHome();
+            break;
+        case "button-menu":
+            contentChild = createMenu();
+            break;
+        case "button-about":
+            contentChild = createAbout();
+            break;
+    }
+
+    content.textContent = "";
+    content.appendChild(contentChild);
+}
+
+buttonList.addEventListener("click", onButtonListClick);
+
+content.appendChild(createHome());
