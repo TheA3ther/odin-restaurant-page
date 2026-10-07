@@ -92,7 +92,8 @@ nav > button:hover {
     padding: 20px 50px 20px 90px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: safe center;
+    overflow: auto;
 }
 
 #home > #home-text > h1 {
