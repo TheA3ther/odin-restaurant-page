@@ -1,4 +1,7 @@
 import "./styles.css";
-import { greeting } from "./modules/home.js";
+import createHome from "./modules/home.js";
 
-console.log(greeting);
+const content = document.querySelector("#content");
+
+const home = createHome();
+content.appendChild(home);
