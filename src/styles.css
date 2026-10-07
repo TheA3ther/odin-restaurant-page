@@ -105,3 +105,29 @@ nav > button:hover {
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
+
+#menu {
+    height: 100%;
+    display: flex;
+    justify-content: safe center;
+    align-items: safe center;
+    overflow: auto;
+}
+
+#menu * {
+    border: 1px solid black;
+}
+
+#menu tr > * {
+    padding: 1rem;
+    box-shadow: 0px 0px 1px 2px rgb(148, 148, 148);
+}
+
+#menu tr > th {
+    background-color: rgb(148, 148, 148);
+    font-size: 2rem;
+}
+
+#menu tr > td {
+    font-size: 1.4rem;
+}

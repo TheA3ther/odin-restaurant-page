@@ -3,5 +3,5 @@ import createHome from "./modules/home.js";
 
 const content = document.querySelector("#content");
 
-const home = createHome();
-content.appendChild(home);
+// const home = createHome();
+// content.appendChild(home);
